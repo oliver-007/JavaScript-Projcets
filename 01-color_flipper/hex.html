@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/o_tailwind.css" />
+    <title>color-flipper</title>
+  </head>
+  <body>
+    <nav
+      class="bg-white border-gray-400 shadow-xl shadow-slate-300 rounded-b-lg mx-8"
+    >
+      <div class="flex justify-around items-center h-20">
+        <div>
+          <a href="index.html">
+            <h4 class="text-4xl font-bold">Color flipper</h4>
+          </a>
+        </div>
+        <div class="text-neutral-700">
+          <ul class="inline-flex font-bold text-2xl space-x-5">
+            <li class="relative">
+              <a href="index.html">Simple</a>
+            </li>
+            <li class="relative">
+              <a href="hex.html">Hex</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="min-h-screen flex justify-center items-center">
+      <div class="space-y-6 text-center px-32">
+        <div class="bg-gray-800 text-white rounded-lg px-14 py-8">
+          <h2 class="text-2xl font-bold">
+            background Color :
+            <span id="colorName" class="block text-blue-500">#F1f5f8</span>
+          </h2>
+        </div>
+        <button
+          id="btn"
+          type=""
+          class="text-lg font-semibold hover:bg-gray-800 hover:text-white ring-2 rounded-lg px-6 py-1 hover:ring-cyan-400 ring-offset-4 transition-all duration-300 ring-indigo-600 outline-none"
+        >
+          Click me
+        </button>
+      </div>
+    </main>
+    <script src="hex.js"></script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "javascript_projects",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tailwindcss -i ./src/i_tailwind.css -o ./dist/o_tailwind.css --watch"
+  },
+  "author": "@ Oliver",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.0.18"
+  }
+}

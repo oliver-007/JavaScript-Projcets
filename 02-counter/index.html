@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/o_tailwind.css" />
+    <title>counter</title>
+  </head>
+  <body class="min-h-screen flex justify-center items-center">
+    <div>
+      <div class="">
+        <h1 class="pb-8 text-5xl text-center font-bold tracking-widest">
+          Counter
+        </h1>
+        <span id="value" class="text-7xl font-bold block text-center">0</span>
+      </div>
+      <div class="pt-10 space-x-5">
+        <button
+          id="decrease"
+          class="bg-blue-400 px-3 py-1 rounded-md shadow-md shadow-gray-500 hover:bg-red-400 hover:text-white"
+        >
+          Decrease
+        </button>
+        <button
+          id="reset"
+          class="px-3 py-1 rounded-md shadow-md shadow-gray-500 hover:bg-slate-400 hover:text-white"
+        >
+          Reset
+        </button>
+        <button
+          id="increase"
+          class="bg-blue-400 px-3 py-1 rounded-md shadow-md shadow-gray-500 hover:bg-lime-400 hover:text-black"
+        >
+          Increase
+        </button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
