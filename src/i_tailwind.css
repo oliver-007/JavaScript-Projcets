@@ -35,3 +35,17 @@ nav ul li a:hover::after {
 .show-text .plus-icon {
   @apply hidden;
 }
+
+.bg {
+  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
+    url(/10-scroll/bg_pic.jpeg);
+  background-size: 100vw 100vh;
+}
+
+.show-links {
+  height: 100px;
+}
+
+.sec-h {
+  height: 80vh;
+}
