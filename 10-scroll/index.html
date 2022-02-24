@@ -15,38 +15,36 @@
     <title>Scroll Oliver</title>
   </head>
   <body class="">
-    <header class="bg h-screen">
+    <header id="home" class="bg h-screen">
       <!-- navbar -->
-      <nav class="py-5 px-10 bg-white">
-        <div class="">
-          <div class="flex justify-between">
-            <img class="h-12" src="logo.svg" alt="logo" />
-            <button id="nav-toggle" class="nav-toggle text-3xl px-3 py-2">
-              <i class="fas fa-solid fa-bars"></i>
-            </button>
-          </div>
-          <!-- links -->
-          <div
+      <nav
+        class="fixed w-full py-5 px-10 bg-white flex justify-between items-center"
+      >
+        <a href="#">
+          <img id="logo" class="h-10" src="logo.svg" alt="logo" />
+        </a>
+
+        <div>
+          <button id="nav-toggle" class="md:hidden transition">
+            <i class="fas fa-solid fa-bars"></i>
+          </button>
+          <ul
             id="links-container"
-            class="grid items-center text-slate-600 h-0 overflow-hidden transition-all duration-500"
+            class="links fixed left-0 right-0 text-xl tracking-wide font-semibold bg-white bg-opacity-75 grid grid-flow-col justify-center gap-10 mt-6 transform translate-x-full md:relative md:flex md:space-y-0 md:space-x-8 md:translate-x-0 md:mt-0 transition-all duration-500 capitalize"
           >
-            <ul
-              class="links grid grid-flow-col justify-around text-xl tracking-wide font-semibold"
-            >
-              <li>
-                <a href="#home" class="scroll-link">home</a>
-              </li>
-              <li>
-                <a href="#about" class="scroll-link">about</a>
-              </li>
-              <li>
-                <a href="#services" class="scroll-link">services</a>
-              </li>
-              <li>
-                <a href="#tours" class="scroll-link">tours</a>
-              </li>
-            </ul>
-          </div>
+            <li class="">
+              <a href="#home" class="scroll-link">home</a>
+            </li>
+            <li>
+              <a href="#about" class="scroll-link">about</a>
+            </li>
+            <li>
+              <a href="#services" class="scroll-link">services</a>
+            </li>
+            <li>
+              <a href="#tours" class="scroll-link">tours</a>
+            </li>
+          </ul>
         </div>
       </nav>
       <!-- banner -->
@@ -68,37 +66,47 @@
         </div>
       </div>
     </header>
-    <!-- about -->
-    <section id="about" class="sec-h pb-20">
-      <div class="font-bold text-2xl tracking-widest uppercase text-center">
-        <h2>about <span class="text-cyan-400">us</span></h2>
-      </div>
-    </section>
 
-    <!-- services -->
-    <section id="services" class="sec-h pb-20">
-      <div class="font-bold text-2xl tracking-widest uppercase text-center">
-        <h2>our <span class="text-cyan-400">services</span></h2>
-      </div>
-    </section>
+    <div class="">
+      <!-- about -->
+      <section id="about" class="sec-h py-20">
+        <div class="font-bold text-2xl tracking-widest uppercase text-center">
+          <h2>about <span class="text-cyan-400">us</span></h2>
+        </div>
+      </section>
 
-    <!-- contact -->
-    <section id="tours" class="sec-h pb-20">
-      <div class="font-bold text-2xl tracking-widest uppercase text-center">
-        <h2>fetured <span class="text-cyan-400">tours</span></h2>
-      </div>
-    </section>
+      <!-- services -->
+      <section id="services" class="sec-h py-20 bg-blue-50">
+        <div class="font-bold text-2xl tracking-widest uppercase text-center">
+          <h2>our <span class="text-cyan-400">services</span></h2>
+        </div>
+      </section>
+
+      <!-- contact -->
+      <section id="tours" class="sec-h py-20">
+        <div class="font-bold text-2xl tracking-widest uppercase text-center">
+          <h2>fetured <span class="text-cyan-400">tours</span></h2>
+        </div>
+      </section>
+    </div>
 
     <!-- footer -->
     <footer
-      class="py-20 bg-gray-600 text-center text-2xl text-white capitalize tracking-wider"
+      class="py-10 bg-gray-600 text-center text-2xl text-white capitalize tracking-wider grid grid-cols-4 gap-5 place-items-center"
     >
-      <p>
+      <p class="col-span-3 px-3">
         copyright &COPY; Oliver tours and travels
         <span id="date" class="text-cyan-300 font-bold">2022</span> . all rights
         reserved
       </p>
+      <a
+        href="#home"
+        class="grid place-items-center ring-1 ring-cyan-300 shadow-md shadow-cyan-400 rounded-full w-10 h-10"
+      >
+        <i class="fa fa-solid fa-angle-up"></i>
+      </a>
     </footer>
+
     <script src="app.js"></script>
   </body>
 </html>

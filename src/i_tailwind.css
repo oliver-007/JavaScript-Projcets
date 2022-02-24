@@ -43,7 +43,7 @@ nav ul li a:hover::after {
 }
 
 .show-links {
-  height: 100px;
+  transform: translateX(0);
 }
 
 .sec-h {
