@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -17,22 +17,20 @@
   <body class="">
     <header id="home" class="bg h-screen">
       <!-- navbar -->
-      <nav
-        class="fixed w-full py-5 px-10 bg-white flex justify-between items-center"
-      >
+      <nav id="nav" class="w-full py-5 px-10 flex justify-between items-center">
         <a href="#">
           <img id="logo" class="h-10" src="logo.svg" alt="logo" />
         </a>
 
         <div>
-          <button id="nav-toggle" class="md:hidden transition">
+          <button id="nav-toggle" class="md:hidden">
             <i class="fas fa-solid fa-bars"></i>
           </button>
           <ul
             id="links-container"
-            class="links fixed left-0 right-0 text-xl tracking-wide font-semibold bg-white bg-opacity-75 grid grid-flow-col justify-center gap-10 mt-6 transform translate-x-full md:relative md:flex md:space-y-0 md:space-x-8 md:translate-x-0 md:mt-0 transition-all duration-500 capitalize"
+            class="fixed left-0 right-0 text-xl tracking-wide font-semibold grid grid-flow-col justify-center gap-10 mt-6 transform translate-x-full md:relative md:flex md:space-y-0 md:space-x-8 md:translate-x-0 md:mt-0 transition-all duration-500 capitalize"
           >
-            <li class="">
+            <li>
               <a href="#home" class="scroll-link">home</a>
             </li>
             <li>
@@ -92,20 +90,20 @@
 
     <!-- footer -->
     <footer
-      class="py-10 bg-gray-600 text-center text-2xl text-white capitalize tracking-wider grid grid-cols-4 gap-5 place-items-center"
+      class="py-10 bg-gray-600 text-center text-2xl text-white capitalize tracking-wider"
     >
-      <p class="col-span-3 px-3">
+      <p class="px-3">
         copyright &COPY; Oliver tours and travels
         <span id="date" class="text-cyan-300 font-bold">2022</span> . all rights
         reserved
       </p>
-      <a
-        href="#home"
-        class="grid place-items-center ring-1 ring-cyan-300 shadow-md shadow-cyan-400 rounded-full w-10 h-10"
-      >
-        <i class="fa fa-solid fa-angle-up"></i>
-      </a>
     </footer>
+    <a
+      href="#home"
+      class="scroll-link top-link ring ring-cyan-500 shadow-xl shadow-cyan-500 rounded-full text-cyan-500"
+    >
+      <i class="fa fa-solid fa-angle-up"></i>
+    </a>
 
     <script src="app.js"></script>
   </body>
